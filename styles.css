@@ -30,11 +30,11 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .centered-image {
-  display: block; /* Makes the image a block-level element */
-  width: 300px; /* Set your desired width */
-  height: auto; /* Maintains aspect ratio */
-  margin: 30px auto; /* Centers the image horizontally */
-  border: 4px solid #333; /* Dark grey border with 4px width */
+    display: block; /* Makes the image a block-level element */
+    width: 300px; /* Set your desired width */
+    height: auto; /* Maintains aspect ratio */
+    margin: 30px auto; /* Centers the image horizontally */
+    border: 4px solid #333; /* Dark grey border with 4px width */
 }
 .centered-text {
     width: 50%; /* Adjust this percentage to your desired width */
@@ -45,17 +45,17 @@ h1, h2, h3, h4, h5, h6 {
 
 
 .header {
-  display: flex;
-  align-items: center;
-  width: 80%; /* Adjust this percentage as needed */
-  margin: 30px auto;
+    display: flex;
+    align-items: center;
+    width: 80%; /* Adjust this percentage as needed */
+    margin: 30px auto;
 }
 
 .header::before,
 .header::after {
-  content: "";
-  flex: 1;
-  height: 3px;
-  background-color: #555;
-  margin: 0 10px;
+    content: "";
+    flex: 1;
+    height: 3px;
+    background-color: #555;
+    margin: 0 10px;
 }
