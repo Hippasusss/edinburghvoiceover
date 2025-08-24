@@ -1,13 +1,16 @@
 
 document.querySelectorAll('.toggle-header').forEach(header => {
     header.addEventListener('click', function() {
-        const targetId = this.getAttribute('data-target');
-        const container = document.getElementById(targetId);
+        const foldableTargetID = this.getAttribute('data-target');
+        const foldableContainer = document.getElementById(foldableTargetID);
+        console.log(foldableTargetID);
 
-        if (container.style.display === 'none') {
-            container.style.display = 'flex'; // or 'block' depending on your layout
+        if (foldableContainer.style.display === 'none') {
+            foldableContainer.style.display = 'block'; // or 'block' depending on your layout
+            console.log("1");
         } else {
-            container.style.display = 'none';
+            foldableContainer.style.display = 'none';
+            console.log("2");
         }
     });
 });

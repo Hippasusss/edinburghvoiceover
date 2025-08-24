@@ -103,20 +103,20 @@ a{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    width: 65%;
+    width: 70%;
     margin: 0 auto;
     gap: 20px;
 }
 
-.flexContainer > iframe,
-.flexContainer > video,
-.flexContainer > audio,
 .flexContainer > div {
-    aspect-ratio:16/9;
-    flex:1 1 0px;
+    flex:1;
     text-align: center;
     margin: 5px auto;
-    max-width: 300px;
+}
+.flexContainer > div > iframe{
+    border-radius:20px;
+    aspect-ratio:16/9;
+    width: 400px;
 }
 
 .flexContainer > p{
@@ -126,9 +126,15 @@ a{
     max-width: 400px;
 }
 
+.flexContainer > div > p{
+    margin:auto;
+}
+
 .toggle-header{
     margin-top:20px;
+    margin-bottom:20px;
 }
+
 
 /*.section{*/
 /*    margin:100px auto;*/
@@ -150,7 +156,6 @@ audio::-webkit-media-controls-panel {
     background-color: white;
 }
 
-audio::-webkit-media-controls-play-button,
 audio::-webkit-media-controls-mute-button,
 audio::-webkit-media-controls-timeline,
 audio::-webkit-media-controls-current-time-display,
@@ -168,6 +173,9 @@ audio::-webkit-media-controls-toggle-closed-captions-button {
     filter: invert(0.3); /* darken controls (adjust as needed) */
 }
 
+audio::-webkit-media-controls-play-button{
+    color:indianred;
+}
 /* Firefox */
 audio {
     --media-control-background: white;
