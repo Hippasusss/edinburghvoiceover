@@ -30,18 +30,31 @@ h3{
 }
 
 #title{
-    height:20px;
-    margin: 50px 0 ;
-    /*white-space:nowrap;*/
-    /*display:inline-block;*/
-
+    font-size:2em;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    margin: 50px 0;
+    display: flex;
+    width: 100%;
 }
 
-#title::before{
-    margin: 0 0 0 20%;
-}
-#title::after {
-    margin: 0 20% 0 0;
+@media (max-width: 768px) {
+    #title{
+        font-size:1.6em;
+        text-align: center;
+        margin: 30px 0;
+        display: block;
+        width: 100%;
+    }
+    #title::before{
+        display:none;
+        /*margin: 0 5px 0 20%;*/
+    }
+    #title::after {
+        display:none;
+        /*margin: 0 20% 0 5px;*/
+    }
 }
 
 #banner {
@@ -86,7 +99,7 @@ a{
     font-weight:lighter;
     align-items: center;
     width: 100%; 
-    margin: 30px 5px;
+    margin: 30px auto;
 }
 
 .header::before,
@@ -117,6 +130,12 @@ a{
     border-radius:20px;
     aspect-ratio:16/9;
     width: 400px;
+}
+
+@media (max-width: 768px) {
+    .flexContainer > div > iframe{
+        width: 300px;
+    }
 }
 
 .flexContainer > p{
@@ -182,15 +201,15 @@ audio {
     --media-control-color: #444;
 }
 #map{
-    width:"600"; 
-    height:"450"; 
-    border:1; 
-    border-width:3px; 
-    margin: 10px auto 50px auto;
-    display:block;
+    width: 300px; 
+    height: 150px; 
+    border: 3px solid; 
+    margin: auto;
+    display: block;
 }
 
 #footer{
+    margin:auto;
     position:relative;
     height: 100px;
 }
